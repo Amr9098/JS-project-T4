@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Market Sans", Arial, sans-serif;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .bordBot {
+    width: 100%;
+    border-bottom: 1px solid rgb(229, 229, 229);
+  }
+  .header {
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 85%;
+    height: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+  }
+  #badge{
+    color: rgb(255, 13, 13);
+    font-size: 15px;
+    font-weight: 900;
+    
+    }
+  span a {
+    padding: 0px;
+    color: rgb(6, 84, 186);
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .header p,
+  a {
+    display: inline-block;
+    padding: 0 10px;
+    color: rgb(17, 24, 32);
+    text-decoration: none;
+  }
+  .header a {
+    cursor: pointer;
+  }
+  .ico {
+    font-size: 13px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* .......................................................... */
+  .eBaynav {
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 85%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .ebay_Search {
+    border: 1px solid black;
+    height: 40%;
+    display: flex;
+    font-size: 14px;
+    width: 800px;
+    height: 48px;
+    align-items: center;
+    color: rgb(118, 118, 118);
+  }
+  .ebay_Search input {
+    width: 75%;
+    height: 95%;
+    font-size: 20px;
+    border: none;
+    padding: 0 20px;
+    margin: 0 20px;
+  }
+  
+  .ebay_Search select {
+    height: 100%;
+    width: 140px;
+    border: 1px rgb(17, 24, 32) solid;
+    color: rgb(118, 118, 118);
+  }
+  .icosc {
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(118, 118, 118);
+  }
+  #butsearch {
+    background-color: rgb(54, 101, 243);
+    padding: 17px 66px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px;
+  }
+  .eBaynav p {
+    color: rgb(118, 118, 118);
+  }
+  .eBaynav p:hover {
+    text-decoration: underline;
+  }
+  #sbc {
+    width: 50px;
+    margin: 0 10px;
+    color: rgb(118, 118, 118);
+  }
+
+  .content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    
+  }
+  .left_side{
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+
+  }
+  .left_side img{
+    border:1px solid rgb(206, 202, 202);
+    width:100%;
+    height:80%;
+    transition: all 2s ease-in-out;
+  } 
+  .left_side img:hover{
+    transform: scale(1.2);
+  }
+
+  .right_side{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+  #product-NNn{
+    padding: 10px;
+  }
+  #product-NNn h3{
+    width: 80%;
+    font:25px bold 800;
+
+  }
+  #product-NNn a{
+    padding-top: 5px ;
+    color:goldenrod;
+  }
+  #product-NNn h4{
+padding-top: 20px;
+color: rgb(17, 24, 32);
+font:25px bold;
+border-bottom: 2px solid rgb(118, 118, 118);
+}
+#condition_product {
+  color: rgb(6, 100, 208);
+  font-size:15px ;
+}
+.button_cart{
+width: 100%;
+height: 200px;
+border-bottom:2px solid rgb(111, 116, 92);
+display: flex;
+justify-content: space-around;
+
+}
+#money{
+  width: 40%;
+height: 50px;
+/* border:2px solid rgb(133, 162, 13); */
+font-size: 10px;
+padding: 20px;
+}
+#price_product{
+  color: rgb(6, 100, 208);
+  font-size:20px ;
+}
+
+#cart-button{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+height: 200px;
+
+/* border:2px solid rgb(133, 162, 13); */
+}
+#cart-button a{
+border:  1px #0053a0 solid;
+border-radius: 25px;
+padding: 15px 50px ;
+font-size: 14px;
+margin: 10px 0;
+font-weight:700;
+color: white;
+background-color: #4a7eae;
+cursor: pointer;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+transition: all 1s ease-in-out;
+
+}
+#cart-button a:last-child{
+  background-color: rgb(52, 152, 202);
+}
+#cart-button a:first-child{
+ color: rgb(52, 152, 202);
+ background-color: whitesmoke;
+}
+#cart-button a:hover{
+  background-color: rgb(0, 83, 160);
+  transform: scale(1.1);
+  
+  
+}
+.input_field input{
+  border: 1px solid rgb(90, 86, 86);
+  border-radius: 8px;
+  padding: 8px;
+
+  }
+  
+  .input_field{
+    margin-top:20px;
+    font-size: 10px;
+  }
+
+  .input_field .link_1{
+    color: red;
+    text-decoration:underline;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 60px;
+
+
+  }
+.input_field a{
+    text-decoration:underline;
+  }
+  #cart_panel{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #cart_panel div{
+    padding: 0 50px;
+    width: 60%;
+    height: 100%;
+    border: 1px solid rgb(1, 226, 5);
+    align-items: center;
+  }
+  #cart_panel div h3{
+    color: rgb(142, 173, 19);
+  }
+  #cart_panel div h6{
+    color: rgb(118, 118, 118);
+  }
+  .cont5{
+    border: 1px inset rgb(118, 11, 201);
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+  }
+  .cont5 p{
+    padding: 20px 50px ;
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+  .cont5 p::first-letter{
+    font-size: 25px;
+    color: rgb(116, 47, 255);
+
+  }
+  .cont5 span{
+    color: #0053a0;
+  }
+   #m1 {
+    color: goldenrod;
+  }
+
+
+
+

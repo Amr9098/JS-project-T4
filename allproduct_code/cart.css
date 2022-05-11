@@ -1,0 +1,400 @@
+body {
+    padding: 0;
+
+    margin: 0;
+
+    background-color: var(--color-background-default, #fff);
+    color: var(--color-text-primary, #111820);
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 0.875rem;
+    -webkit-text-size-adjust: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.bordBot {
+    width: 100%;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.header {
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 85%;
+    height: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+}
+
+span a {
+    padding: 0px;
+    color: rgb(6, 84, 186);
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header p,
+a {
+    display: inline-block;
+    padding: 0 10px;
+    color: rgb(17, 24, 32);
+    text-decoration: none;
+}
+
+.header a {
+    cursor: pointer;
+}
+
+.ico {
+    font-size: 13px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* .......................................................... */
+.eBaynav {
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 85%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+    align-items: center;
+}
+
+.ebay_Search {
+    border: 1px solid black;
+    height: 40%;
+    display: flex;
+    font-size: 14px;
+    width: 800px;
+    height: 48px;
+    align-items: center;
+    color: rgb(118, 118, 118);
+}
+
+.ebay_Search input {
+    width: 75%;
+    height: 95%;
+    font-size: 20px;
+    border: none;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.ebay_Search select {
+    height: 100%;
+    width: 140px;
+    border: 1px rgb(17, 24, 32) solid;
+    color: rgb(118, 118, 118);
+}
+
+.icosc {
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(118, 118, 118);
+}
+
+#butsearch {
+    background-color: rgb(54, 101, 243);
+    padding: 17px 66px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px;
+}
+
+.eBaynav p {
+    color: rgb(118, 118, 118);
+}
+
+.eBaynav p:hover {
+    text-decoration: underline;
+}
+
+#sbc {
+    width: 50px;
+    margin: 0 10px;
+    color: rgb(118, 118, 118);
+}
+
+#hea {
+    height: 40px;
+    width: 100%;
+
+    background-color: brown;
+}
+
+#d1 {
+    height: 60px;
+    background-color: aquamarine;
+}
+
+#sh_cart {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#sh_cart>a {
+    font-size: 17px;
+    text-align: center;
+    float: right;
+    margin: 5px;
+    text-decoration: underline;
+    color: blue;
+}
+
+#r_section {
+    width: 30%;
+    float: right;
+    padding-left: 1rem;
+}
+
+.s_data {
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+div #bu {
+    text-align: center;
+    width: 100%;
+    padding: 0 0.625rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: var(--btn-border-radius, var(--border-radius-button, 48px));
+    color: aliceblue;
+    background-color: blue;
+    font-weight: bold;
+    font-size: 1rem;
+
+    min-height: 48px;
+}
+
+#table {
+    margin-top: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#b_x {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 1rem 0;
+}
+
+#total {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#p1_d {
+    background-color: red;
+}
+
+.bt {
+    float: right;
+    color: cornflowerblue;
+}
+
+.di_bu {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.di_box {
+    border: 1px solid #e5e5e5;
+    background: " #fff ";
+    width: 67%;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.sel_box {
+    padding: 1rem;
+}
+
+.sel_box a {
+    position: absolute;
+    left: 600px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.rq {
+    float: right;
+}
+
+.li_d {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1rem;
+}
+
+.pa_di {
+    flex-direction: row;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_div {
+    flex: 1;
+}
+
+.nam_div {
+    margin-left: 1rem;
+    flex: 2;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tot_div {
+    flex: 2;
+    margin-left: 32rem;
+}
+
+.tot_div div {
+    color: #707070;
+    padding-bottom: 0.5rem;
+}
+
+.im {
+    width: 100px;
+    height: 110px;
+}
+
+.empty_cart {
+    clear: both;
+    padding-top: 6rem;
+    padding-bottom: 9.5rem;
+    text-align: center;
+}
+
+.empty_cart span {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.di_bi {
+    margin-top: 1.5rem;
+}
+
+.di_bi a {
+    width: 100%;
+}
+
+.bb {
+    text-align: center;
+    width: 27%;
+    padding: 0 0.625rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: var(--btn-border-radius, var(--border-radius-button, 48px));
+    color: aliceblue;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    min-height: 48px;
+}
+
+.bb:hover {
+    background-color: blue;
+}
+
+.sel_span {
+    font-size: 1.25rem;
+}
+
+#fot {
+    height: 8rem;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+    padding: 20px 10px 40px 10px;
+    line-height: 1;
+    font-size: 14px;
+
+    font-family: "Helvetica neue", Helvetica, Arial, Sans-serif;
+}
+
+#fotb {
+    font-size: 11px !important;
+    margin: 2rem 30rem 2rem 1rem;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#fotb div {
+    flex: 1;
+}
+
+#fotb a {
+    color: #9e9e9e;
+    text-decoration: none;
+}
+
+#fot_s {
+    font-size: 11px !important;
+    margin: 2rem 35rem 2rem 1rem;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#fot_s a {
+    color: #9e9e9e;
+}

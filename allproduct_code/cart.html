@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="icon" type="image/x-icon" href="" />
+
+    <link rel="icon" href="https://pages.ebay.com/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cart</title>
+
+</head>
+
+
+
+
+
+<body>
+    <div class="container">
+        <div class="bordBot">
+            <div class="header">
+                <div>
+                    <p>
+                        <span>
+                            Hi! <a href="signin/signIn.html">Sign in</a> or <a href="signup.html">register</a></span>
+                    </p>
+                    <a href="/index.html">Daily Deals</a>
+                    <a href="/index.html">Help & Contact</a>
+                </div>
+                <div>
+                    <a href="/index.html">home</a>
+                    <a href="/index.html">Ship to</a>
+                    <a href="/index.html">Sell</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">My eBay</a>
+                        <div class="dropdown-content">
+                            <a href="/index.html"> Summary</a>
+                            <a href="/index.html"> Recently Viewed</a>
+                            <a href="/index.html"> Bids/Offers</a>
+                            <a href="/index.html"> Watchlist</a>
+                            <a href="/index.html"> Purchase History</a>
+                            <a href="/index.html"> Buy Again</a>
+                            <a href="/index.html"> Selling</a>
+                            <a href="/index.html"> Saved Searches</a>
+                            <a href="/index.html"> Saved Sellers</a>
+                            <a href="/index.html"> Messages</a>
+                        </div>
+                    </div>
+                    <a href="/index.html">Watchlist</a>
+                    <a href="/index.html"><i class="fa-solid fa-bell ico"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping ico"></i>   <span id="badge">0</span>  </a>  
+                </div>
+            </div>
+        </div>
+        <div class="bordBot">
+            <div class="eBaynav">
+                        <a href="/index.html">
+                    <img src="/photo/ebay_logo.png" alt="ebay_logo" width="150" height="80" />
+    
+                            </a>  
+                                 <a id="sbc" href="#">Shop by category </a>
+                <div class="ebay_Search">
+                    <i class="fa-solid fa-magnifying-glass icosc"></i>
+                    <input type="text " placeholder="Search for anything" />
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Antiques</option>
+                        <option>Art</option>
+                        <option>Baby</option>
+                        <option>Books</option>
+                        <option>Business &amp; Industrial</option>
+                        <option>Cameras &amp; Photo</option>
+                        <option>Cell Phones &amp; Accessories</option>
+                        <option>Clothing, Shoes &amp; Accessories</option>
+                        <option>Coins &amp; Paper Money</option>
+                        <option>Collectibles</option>
+                        <option>Computers/Tablets &amp; Networking</option>
+                        <option>Consumer Electronics</option>
+                        <option>Crafts</option>
+                        <option>Dolls &amp; Bears</option>
+                        <option>DVDs &amp; Movies</option>
+                        <option>eBay Motors</option>
+                        <option>Entertainment Memorabilia</option>
+                        <option>Gift Cards &amp; Coupons</option>
+                        <option>Health &amp; Beauty</option>
+                        <option>Home &amp; Garden</option>
+                        <option>Jewelry &amp; Watches</option>
+                        <option>Music</option>
+                        <option>Musical Instruments &amp; Gear</option>
+                        <option>Pet Supplies</option>
+                        <option>Pottery &amp; Glass</option>
+                        <option>Real Estate</option>
+                        <option>Specialty Services</option>
+                        <option>Sporting Goods</option>
+                        <option>Sports Mem, Cards &amp; Fan Shop</option>
+                        <option>Stamps</option>
+                        <option>Tickets &amp; Experiences</option>
+                        <option>Toys &amp; Hobbies</option>
+                        <option>Travel</option>
+                        <option>Video Games &amp; Consoles</option>
+                        <option>Everything Else</option>
+                    </select>
+                </div>
+                <a id="butsearch" href="search.html">Search</a>
+                <p>Advanced</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div>
+        <div id="sh_cart">
+            <span id="items_count"></span>
+
+            <a href="">Send Us Your Comments</a>
+
+        </div>
+        <div id="r_section">
+            <div class="s_data">
+
+                <div>
+                    <button id="bu">Go to checkout</button>
+
+                </div>
+
+                <div id="tabl">
+                    <div class="row">
+                        <div>
+                            items price
+                        </div>
+                        <div>
+                            <span id="valu"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            Shipping to 3214
+
+
+                        </div>
+                        <div>
+                            <span id="ship_valu"></span>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div>
+                            Import charges
+
+
+                        </div>
+                        <div>
+                            <span id="import_valu"></span>
+
+                        </div>
+                    </div>
+                    <div id="b_x"> </div>
+
+                    <div class="row" id="total">
+                        <div>
+                            subtotal
+
+
+                        </div>
+                        <div>
+                            <span id="total_valu"></span>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div id="item_view" > </div>
+
+    </div>
+
+    <div style="height: 13rem;">
+        <footer id="fot">
+            <div id="fotb">
+
+                <di><a href="">About eBay</a></di>
+                <di><a href="">Announcements</a></di>
+                <di><a href="">Community</a></di>
+                <di><a href="">Security Center</a></di>
+                <di><a href="">Seller Information Center</a></di>
+                <di><a href="">Policies</a></di>
+                <di><a href="">Affiliates</a></di>
+                <di><a href="">Help & Contact</a></di>
+                <di><a href="">Site Map</a></di>
+            </div>
+            <div id="fot_s">
+
+                <di style="color: #9e9e9e;">Copyright © 1995-2022 eBay Inc. All Rights Reserved</di>
+                <di><a href=""> Accessibility</a></di>
+                <di><a href="">User Agreement</a></di>
+                <di><a href="">Privacy</a></di>
+                <di><a href="">Cookies, </a></di>
+                <di><a href=""> Do not sell my personal information and</a></di>
+                <di><a href=""> AdChoice</a></di>
+
+            </div>
+
+
+            <div style="float: right; margin-right: 2rem;"> <img src="src/Capture.PNG" width="85px" height="50px"></div>
+
+
+
+
+        </footer>
+    </div>
+
+    <script>
+        var el = document.getElementById('r_section');
+        //var elTop = el.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
+
+        window.addEventListener('scroll', function() {
+            if (document.documentElement.scrollTop > 145) {
+                el.style.position = 'fixed';
+                el.style.left = '920px';
+                el.style.top = '0';
+            } else {
+
+                el.style.position = "relative";
+                el.style.left = '0';
+                // el.style.width = "30%";
+                //el.style.float = "right";
+                //el.style.paddingLeft = "1rem";
+                //el.style.position = 'static';
+                //el.style.top = 'auto';
+            }
+        });
+
+
+
+
+
+
+        function set_loc(loc_key, arr_na) {
+            localStorage.setItem(loc_key, JSON.stringify(arr_na));
+
+
+        }
+
+        function get_loc(loc_key) {
+            var arr = localStorage.getItem(loc_key);
+            return JSON.parse(arr);
+
+        }
+
+
+
+        if (localStorage.getItem("inames") && localStorage.getItem("inames") !== "[]") {
+            //alert(localStorage.getItem("inames"));
+            let pa_di = document.getElementById("item_view");
+
+            var i_name = get_loc("inames");
+            var i_price = get_loc("iprice");
+            var i_img = get_loc("i_img");
+            var i_seller = get_loc("iseller");
+            var i_ship_cost = get_loc("i_ship");
+            var i_import_cost = get_loc("i_imp");
+
+
+            var R_tot_d = document.getElementById("valu");
+            var R_ship_d = document.getElementById("ship_valu");
+            var R_imp_d = document.getElementById("import_valu");
+            var R_sup_total = document.getElementById("total_valu");
+            var items_count = document.getElementById("items_count");
+                
+
+            var total = 0;
+            var total_i = 0;
+            var total_ship = 0;
+            var total_import = 0;
+            var sub_total = 0;
+
+            for (var i = 0; i < i_price.length; i++) {
+
+                let div = document.createElement('div');
+                let price_span = document.createElement('span');
+                let sel_box = document.createElement('div');
+                let sell_span = document.createElement('span');
+                let req_span = document.createElement('span');
+                let p_link = document.createElement('A');
+                let lin_div = document.createElement('div');
+                let pare_div = document.createElement('div');
+                let img_div = document.createElement('div');
+                let name_div = document.createElement('div');
+                let img_view = document.createElement('IMG');
+                let tot_div = document.createElement('div');
+                let pric_div = document.createElement('div');
+                let ship_div = document.createElement('div');
+                let import_div = document.createElement('div');
+                let tot_cost_div = document.createElement('div');
+                let bu_di = document.createElement('div');
+                let bt = document.createElement('BUTTON');
+
+
+                div.setAttribute("class", "di_box");
+                sel_box.setAttribute("class", "sel_box")
+                sell_span.setAttribute("class", "sel_span");
+                req_span.setAttribute("class", "rq");
+                lin_div.setAttribute("class", "li_d");
+                pare_div.setAttribute("class", "pa_di");
+                img_div.setAttribute("class", "img_div");
+                name_div.setAttribute("class", "nam_div");
+                img_view.setAttribute("class", "im");
+                tot_div.setAttribute("class", "tot_div");
+                bu_di.setAttribute("class", "di_bu");
+                bt.setAttribute("class", "bt");
+
+
+                sell_span.innerHTML = "seller:" + i_seller[i];
+                p_link.innerHTML = "pay only this seller";
+                req_span.innerHTML = "Request cost";
+                p_link.setAttribute("href", "");
+                img_view.setAttribute("src", i_img[i]);
+                name_div.innerHTML = i_name[i];
+                pric_div.innerHTML = " item price :       " + i_price[i] + "$";
+                ship_div.innerHTML = "shiping price :     " + i_ship_cost[i] + "$";
+                import_div.innerHTML = "import charge :    " + i_import_cost[i] + "$";
+                total_i = i_price[i] + i_ship_cost[i] + i_import_cost[i];
+                total += i_price[i];
+                total_ship += i_ship_cost[i];
+                total_import += i_import_cost[i];
+
+                tot_cost_div.innerHTML = "total cost:      " + total_i + "$";
+                bt.innerHTML = "remove";
+
+
+                bt.onclick = function() {
+
+                    var pare = div.parentNode;
+                    var index = Array.prototype.indexOf.call(pare.children, div);
+
+
+                    total -= i_price[index];
+                    total_ship -= i_ship_cost[index];
+                    total_import -= i_import_cost[index];
+                    sub_total = total + total_ship + total_import;
+
+                    R_tot_d.innerHTML = "US $" + total;
+                    R_ship_d.innerHTML = "US $" + total_ship;
+                    R_imp_d.innerHTML = "US $" + total_import;
+                    R_sup_total.innerHTML = "US $" + sub_total;
+
+                    i_price.splice(index, 1);
+                    i_name.splice(index, 1);
+                    i_img.splice(index, 1);
+                    i_import_cost.splice(index, 1);
+                    i_ship_cost.splice(index, 1);
+                    i_seller.splice(index, 1);
+                    sessionStorage.setItem("countamr",i_name.length);
+                    items_count.innerHTML = "Shopping cart ( " + i_name.length + "items)";
+
+                    set_loc("iprice", i_price);
+                    set_loc("inames", i_name);
+                    set_loc("iseller", i_seller);
+                    set_loc("i_img", i_img);
+                    set_loc("i_ship", i_ship_cost);
+                    set_loc("i_imp", i_import_cost);
+
+
+
+
+
+
+                    if (i_name.length == 0) {
+                        window.location.reload();
+                    }
+
+                    div.remove();
+
+
+
+                };
+
+                pa_di.appendChild(div);
+                // div.appendChild(price_span);
+                div.appendChild(sel_box);
+                sel_box.appendChild(sell_span);
+                sel_box.appendChild(p_link);
+                sel_box.appendChild(req_span);
+                div.appendChild(lin_div);
+                div.appendChild(pare_div);
+                pare_div.appendChild(img_div);
+                pare_div.appendChild(name_div);
+                pare_div.appendChild(tot_div);
+                img_div.appendChild(img_view);
+                tot_div.appendChild(pric_div);
+                tot_div.appendChild(ship_div);
+                tot_div.appendChild(import_div);
+                tot_div.appendChild(tot_cost_div);
+                div.appendChild(bu_di);
+                bu_di.appendChild(bt);
+
+
+            }
+            sub_total = total + total_ship + total_import;
+            R_tot_d.innerHTML = "US $" + total;
+            R_ship_d.innerHTML = "US $" + total_ship;
+            R_imp_d.innerHTML = "US $" + total_import;
+            R_sup_total.innerHTML = "US $" + sub_total;
+            items_count.innerHTML = "Shopping cart ( " + i_name.length + " items)";
+            sessionStorage.setItem("countamr",i_name.length);
+
+
+        } else {
+            //alert("empty_done");
+            var div_dis = document.getElementById("r_section");
+            div_dis.style.display = "none";
+            var pa_d_empty = document.getElementById("sh_cart");
+            var empty_cart = document.createElement('div');
+            var span_tex = document.createElement('span');
+            var di_bi = document.createElement('div');
+            var empty_li = document.createElement('a');
+            var empty_bu = document.createElement('BUTTON');
+
+
+            empty_cart.setAttribute("class", "empty_cart");
+            span_tex.setAttribute("class", "span_tex");
+            empty_li.setAttribute("href", "/index.html");
+            empty_bu.setAttribute("class", "bb");
+            di_bi.setAttribute("class", "di_bi");
+
+            empty_bu.innerHTML = "Start shoping";
+            span_tex.innerHTML = "You don't have any items in your cart. Let's get shopping!";
+            pa_d_empty.appendChild(empty_cart);
+            empty_cart.appendChild(span_tex);
+            empty_cart.appendChild(di_bi);
+            di_bi.appendChild(empty_li);
+            empty_li.appendChild(empty_bu);
+
+        }
+
+
+
+        document.getElementById("badge").innerHTML=sessionStorage.getItem("countamr");
+
+        // console.log(it[1]);
+
+    </script>
+</body>
+
+</html>

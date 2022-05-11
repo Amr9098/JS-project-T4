@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Market Sans", Arial, sans-serif;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .bordBot {
+    width: 100%;
+    border-bottom: 1px solid rgb(229, 229, 229);
+  }
+  .header {
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 85%;
+    height: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+    
+  }
+  #badge{
+    color: rgb(255, 13, 13);
+    font-size: 15px;
+    font-weight: 900;
+    
+    }
+  span a {
+    padding: 0px;
+    color: rgb(6, 84, 186);
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .header p,
+  a {
+    display: inline-block;
+    padding: 0 10px;
+    color: rgb(17, 24, 32);
+    text-decoration: none;
+  }
+  .header a {
+    cursor: pointer;
+  }
+  .ico {
+    font-size: 13px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* .......................................................... */
+  .eBaynav {
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 85%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+    align-items: center;
+  }
+  .ebay_Search {
+    border: 1px solid black;
+    height: 40%;
+    display: flex;
+    font-size: 14px;
+    width: 800px;
+    height: 48px;
+    align-items: center;
+    color: rgb(118, 118, 118);
+  }
+  .ebay_Search input {
+    width: 75%;
+    height: 95%;
+    font-size: 20px;
+    border: none;
+    padding: 0 20px;
+    margin: 0 20px;
+  }
+  
+  .ebay_Search select {
+    height: 100%;
+    width: 140px;
+    border: 1px rgb(17, 24, 32) solid;
+    color: rgb(118, 118, 118);
+  }
+  .icosc {
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(118, 118, 118);
+  }
+  #butsearch {
+    background-color: rgb(54, 101, 243);
+    padding: 17px 66px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px;
+  }
+  .eBaynav p {
+    color: rgb(118, 118, 118);
+  }
+  .eBaynav p:hover {
+    text-decoration: underline;
+  }
+  #sbc {
+    width: 50px;
+    margin: 0 10px;
+    color: rgb(118, 118, 118);
+  }
+  /* ......................apple panel............................ */
+.apple_panel{
+width: 80%;
+height: 180px;
+margin: 0 auto;
+background-image: url(photo/apple\ panel.webp);
+}
+ 
+.apple_panel h1,h3{
+width: 50%;
+color: rgb(172, 21, 21);
+align-items: center;
+margin-top: 50px;
+
+}
+
+/* ............................................ */
+.mainbody{
+display: flex;
+width: 85%;
+height: 100%;
+margin: 0 auto;
+justify-content: space-between;
+padding: 15px;
+margin-top: 150px;
+}
+.mainbody_left{
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+
+}
+.mainbody_left h1{
+  font-size: 14px;
+  font-weight: 800;
+  color: rgb(17, 24, 32);
+  padding: 15px ;
+
+}
+
+.mainbody_left ul li{
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  padding: 10px 2px ;
+}
+.mainbody_left ul li a:hover{
+ text-decoration: underline;
+ cursor: pointer;
+
+}
+.mainbody_m{
+  width: 80%;
+  height: 850px;
+  /* border: 2px solid black; */
+
+}
+.mainbody_m h1{
+  padding:  10px ;
+  font-size: 24px;
+  font-weight: 700;
+  color:rgb(17, 24, 32) ;
+
+}
+
+/* ................................. */
+.data_show{
+width: 100%;
+height: auto;
+/* border: 1px solid red; */
+display: flex;
+flex-wrap: wrap;
+margin-top: 10px;
+
+}
+.show_box{
+ width: 18%;
+ height: 210px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* border: 2px solid green; */
+ margin: 5px ;
+}
+
+.show_box img{
+  width: 150px;
+  height: 150px;
+  margin-bottom:10px ;
+
+}
+.show_box a{
+  color: rgb(17, 24, 32);
+  font-size: 15 px;
+  font-weight:  700;
+}
+.show_box:hover{
+  text-decoration: underline;
+
+}
+.show_box img:hover{
+  border: 0.2px solid rgb(200, 198, 198);
+
+}
+.limt_Tsiz a{
+font-size:12px;  
+padding-top: 5px;
+  }
+ 
+  .fillter_panel{
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite; 
+    margin: 50px 0;
+    }
+#siz_box{
+  margin: 50px 0;
+  width: 24%;
+  height: 250px;
+}
+#siz_box a{
+  font-size:12px;  
+padding-top: 5px;
+width: 80%;
+color: rgb(13, 13, 13);}
+#siz_box img{
+  width: 220px;
+  height: 220px;
+  margin-bottom:5px ;
+}  
+
+  #siz_box a:last-child{
+  
+      color: rgb(118, 118, 118);
+  }
+  .momary_storage a{
+    padding:20px 40px;
+    border:1px solid rgb(110, 51, 51);
+    margin:10px 25px ;
+    font-size: 20px;
+    font-weight:600;
+    color: rgb(118, 118, 118);
+  }
+  .momary_storage a:hover{
+    text-decoration: underline;
+    color: black;
+  }
+
+  

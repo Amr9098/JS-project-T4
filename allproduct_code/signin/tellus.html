@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell us about your Sign In experience</title>
+    <style>
+*{
+    margin: auto;
+    padding: 10px;
+}
+.footer{
+    font-size: small;
+
+}
+#send{
+    background-color: #4400ff;
+    border-radius: 48px;
+}
+
+
+.footer {
+    font-size: small;
+    padding-top: calc(var(--section-padding)/2);
+    padding-bottom: calc(var(--section-padding)/2);
+    border: 1px solid lightslategray;
+    
+   
+}
+.bottom{
+    font-size: small;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="siteimage">
+<a href="/index.html">
+            <img src="download.png" alt="" width="150px" height="100px">
+    
+</a >    </div>
+
+    <h1>Tell us about your Sign In experience</h1>
+    <br>
+
+    <form  action="thankyou.html" class="send"  onsubmit="return(validation())"     >
+                
+
+    <label>What would you like to tell us about today ? </label>
+    <br>
+
+    <input type="radio" id="p" name="question" />
+    <label for="p"> Aproblem or bug</label>
+    <br>
+    <input type="radio" id="s" name="question" />
+    <label for="s"> Asuggestion</label>
+    <br>
+    <br>
+    <br>
+
+
+    <label for="area">Tell us about the problem or bug you encountered</label>
+    <br>
+
+    <textarea maxlength="500" Required="Required"  placeholder="please be aspecific as apossible" aria-invalid="true"
+        id="area"></textarea>
+    <br>
+    <br>
+
+
+    <button type="submit" id="send" name="">send</button>
+</div>
+
+
+<div class="bottom">
+    <p>please don't include any personal information, such as your name, 
+        address, phone or user ID in the fields above.</p>
+    <p>  When you select Send, you are giving eBay full rights to use your comments
+        , and agreeing to the User Agreement.</p>
+    
+</div>
+
+
+<div class="footer"><p>
+        <td class="footer">Copyright © 1995-2022 eBay Inc. All Rights Reserved.
+            <a href="#" >Accessibility</a>,
+               <a href="#" >User Agreement</a>,
+                <a href="#" >Privacy</a>,
+                <a href="#">Cookies</a>,<br>
+           <a href="#"> Do not sell my personal information</a>and
+             <a href="#">AdChoice</a> <br>
+            <span> <img src="download (1).png" alt=""  id="img1" width="80px" height="50px">
+         <i id="norton"> powered by DigiCert</i></span>
+        </div>
+        </form>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Market Sans", Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.bordBot {
+  width: 100%;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+.header {
+  font-family: "Market Sans", Arial, sans-serif;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 85%;
+  height: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: 300;
+}
+span a {
+  padding: 0px;
+  color: rgb(6, 84, 186);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header p,
+a {
+  display: inline-block;
+  padding: 0 10px;
+  color: rgb(17, 24, 32);
+  text-decoration: none;
+}
+.header a {
+  cursor: pointer;
+}
+.ico {
+  font-size: 13px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .......................................................... */
+.eBaynav {
+  font-family: "Market Sans", Arial, sans-serif;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 85%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: 300;
+  align-items: center;
+}
+.ebay_Search {
+  border: 1px solid black;
+  height: 40%;
+  display: flex;
+  font-size: 14px;
+  width: 800px;
+  height: 48px;
+  align-items: center;
+  color: rgb(118, 118, 118);
+}
+.ebay_Search input {
+  width: 75%;
+  height: 95%;
+  font-size: 20px;
+  border: none;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.ebay_Search select {
+  height: 100%;
+  width: 140px;
+  border: 1px rgb(17, 24, 32) solid;
+  color: rgb(118, 118, 118);
+}
+.icosc {
+  padding: 5px;
+  font-size: 20px;
+  color: rgb(118, 118, 118);
+}
+#butsearch {
+  background-color: rgb(54, 101, 243);
+  padding: 17px 66px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+}
+.eBaynav p {
+  color: rgb(118, 118, 118);
+}
+.eBaynav p:hover {
+  text-decoration: underline;
+}
+#sbc {
+  width: 50px;
+  margin: 0 10px;
+  color: rgb(118, 118, 118);
+}
+/* .................................................. */
+.navhome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 6px;
+}
+.navhome a:first-child {
+  color: black;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.navhome a {
+  color: rgb(85, 85, 85);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.navhome a:hover {
+  text-decoration: underline;
+  color: rgb(54, 101, 243);
+  border-left: 1px rgb(118, 118, 118) inset;
+  border-right: 1px rgb(118, 118, 118) inset;
+}
+/* .............slide show.......................... */
+.slidsh{
+    width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  vertical-align: middle;
+  width:100%;
+  margin: 0 auto;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 85%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: white;
+}
+
+.dot {
+ display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: a;
+  animation-duration: 0.5s;
+}
+
+@keyframes a {
+  from {
+    opacity: 0.4;
+    transform: translate3d(600px, 0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+
+  }
+  
+}
+/* ....................data.......................... */
+.data{
+    width: 85%;
+    height: 300px;
+    margin: 20px auto;    
+}
+
+.data_text{
+    padding-top: 5px;
+}
+.data_text a:first-child{
+    padding-top: 5px;
+    color: rgb(17, 24, 32) ;
+    font-size: 24px;
+    font-weight: 700;    
+}
+.data_text a:last-child{
+    padding-top: 5px;
+    color: rgb(17, 24, 32) ;
+    font-size: 20px;
+    font-weight: 500;    
+}
+.icoarrow{
+    padding-top: 5px;
+    color: rgb(17, 24, 32) ;
+    font-size: 24px;
+    font-weight: 700;  
+}
+.data_text a:hover{
+    text-decoration: underline;
+}
+.boxs_container{
+    display: flex;
+    justify-content:space-around;
+
+}
+.data_box{
+    display: flex;
+    width: 13%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.data_box img{
+    width: 150px;
+    height: 150px;
+    margin-bottom:15px ;
+}
+.data_box a{
+    color: rgb(17, 24, 32);
+    font-size: 20px;
+    font-weight:  700;
+}
+.data_box:hover{
+    text-decoration: underline;
+}
+.data_box img:hover{
+    border: 0.5px solid rgb(118, 118, 118);
+    border-radius: 50%;
+}
+
+#data_boxaleft{
+margin-right: 100px;
+}
+
+
+/* .................footer............. */
+footer {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid black;
+}
+.footerdiv{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px 0;
+  justify-content: space-around;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+}
+footer div {
+  width: 25;
+  padding: 20px;
+}
+
+footer div h1 {
+  color: rgb(56, 55, 55);
+  margin-bottom: 10px;
+font-size:15px;
+}
+
+footer div ul li a,
+pre {
+  text-decoration: none;
+  color: rgb(162, 162, 162);
+  font-size:10px;
+}
+.icc{
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+footer div ul li {
+  padding: 5px;
+  display:block;
+  /* text-align: center; */
+
+
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(118, 118, 118);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(210, 224, 8);
+  color: rgb(0, 0, 0);
+
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(118, 118, 118); 
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f9e003; 
+}
+#badge{
+color: rgb(255, 13, 13);
+font-size: 15px;
+font-weight: 900;
+
+}
