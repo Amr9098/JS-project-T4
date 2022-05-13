@@ -73,6 +73,7 @@ function show_Categories(){
                 catbox.appendChild(elem_img);
                 catbox.appendChild(elem_a);
                 catplaces.appendChild(catbox);
+                this.addEventListener('loadend',aaca);
 
 
               
@@ -108,6 +109,8 @@ function show_brands(){
                 catbox.appendChild(elem_img);
                 catbox.appendChild(elem_a);
                 brandsplace.appendChild(catbox);
+                this.addEventListener('loadend',aabr);
+
             }
         }
     }
@@ -129,23 +132,38 @@ function show_Deals(){
             for (var i=0; i<7;i++){ 
                 // console.log(dataR[i].money);
                 var catbox = document.createElement('div');
-                catbox.setAttribute('class','data_box');
+                catbox.setAttribute('class','data_boxx');
                 var elem_img = document.createElement("img");
                 elem_img.setAttribute("src",dataR[i].image);
                 elem_img.setAttribute("alt",i);
                 elem_img.setAttribute("onclick", "runCommanddeals(this);");
                 var elem_a = document.createElement("a");
-                elem_a.setAttribute("id","data_boxaleft")
                 elem_a.textContent=dataR[i].price;
                 catbox.appendChild(elem_img);
                 catbox.appendChild(elem_a);
                 Dealssplace.appendChild(catbox);
+                this.addEventListener('loadend',aade);
             }
         }
     }
+    
     xhr.send();
     }
     show_Deals();
+
+
+    function aaca(){
+      document.getElementById("lodiica").style.display="none";
+    }
+    function aabr(){
+      document.getElementById("lodiibr").style.display="none";
+    } function aade(){
+      document.getElementById("lodiide").style.display="none";
+    } function aace(){
+      document.getElementById("lodiice").style.display="none";
+    }
+
+
     // ..........................Smartphones...............................
        
 var Smartphonesplace = document.getElementById("Smartphones");
@@ -160,17 +178,18 @@ function show_Smartphones(){
             for (var i=0; i<7;i++){ 
                 // console.log(dataR[i].money);
                 var catbox = document.createElement('div');
-                catbox.setAttribute('class','data_box');
+                catbox.setAttribute('class','data_boxx');
                 var elem_img = document.createElement("img");
                 elem_img.setAttribute("src",dataR[i].image);
                 elem_img.setAttribute("alt",i);
                 elem_img.setAttribute("onclick", "runCommandproduct(this);");
                 var elem_a = document.createElement("a");
-                elem_a.setAttribute("id","data_boxaleft")
-                elem_a.textContent=dataR[i].price;
+                  elem_a.textContent=dataR[i].price;
                 catbox.appendChild(elem_img);
                 catbox.appendChild(elem_a);
                 Smartphonesplace.appendChild(catbox);
+                this.addEventListener('loadend',aace);
+
             }
         }
     }

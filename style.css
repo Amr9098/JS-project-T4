@@ -13,7 +13,7 @@
 }
 .header {
   font-family: "Market Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 0.9vw;
   background-color: rgb(255, 255, 255);
   display: flex;
   width: 85%;
@@ -26,7 +26,7 @@
 span a {
   padding: 0px;
   color: rgb(6, 84, 186);
-  font-size: 12px;
+  font-size: 0.7;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -41,7 +41,7 @@ a {
   cursor: pointer;
 }
 .ico {
-  font-size: 13px;
+  font-size: 1vw;
 }
 
 .dropdown {
@@ -75,30 +75,34 @@ a {
 /* .......................................................... */
 .eBaynav {
   font-family: "Market Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 0.7vw;
   background-color: rgb(255, 255, 255);
   display: flex;
   width: 85%;
-  height: 60px;
+  height: 3vw;
   margin: 0 auto;
   padding: 10px;
   font-weight: 300;
   align-items: center;
 }
+.eBaynav img{
+width: 15%;
+
+  
+}
 .ebay_Search {
-  border: 1px solid black;
-  height: 40%;
+  border: 1px solid rgb(0, 0, 0);
+  height: 90%;
   display: flex;
-  font-size: 14px;
-  width: 800px;
-  height: 48px;
+  font-size: 0.7vw;
+  width: 60%;
   align-items: center;
   color: rgb(118, 118, 118);
 }
 .ebay_Search input {
   width: 75%;
   height: 95%;
-  font-size: 20px;
+  font-size: 1vw;
   border: none;
   padding: 0 20px;
   margin: 0 20px;
@@ -106,19 +110,19 @@ a {
 
 .ebay_Search select {
   height: 100%;
-  width: 140px;
+  width: 25%;
   border: 1px rgb(17, 24, 32) solid;
   color: rgb(118, 118, 118);
 }
 .icosc {
   padding: 5px;
-  font-size: 20px;
+  font-size: 1vw;
   color: rgb(118, 118, 118);
 }
 #butsearch {
   background-color: rgb(54, 101, 243);
-  padding: 17px 66px;
-  font-size: 14px;
+  padding: 0.8vw 3vw;
+  font-size: 0.9vw;
   font-weight: 500;
   cursor: pointer;
   color: white;
@@ -140,18 +144,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: auto;
   padding: 6px;
 }
 .navhome a:first-child {
   color: black;
-  font-size: 15px;
+  font-size: 0.9vw;
   text-decoration: underline;
 }
 .navhome a {
   color: rgb(85, 85, 85);
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.9vw;
   padding: 5px 10px;
 }
 .navhome a:hover {
@@ -235,7 +239,7 @@ a {
 /* ....................data.......................... */
 .data{
     width: 85%;
-    height: 300px;
+    height: auto;
     margin: 20px auto;    
 }
 
@@ -245,19 +249,19 @@ a {
 .data_text a:first-child{
     padding-top: 5px;
     color: rgb(17, 24, 32) ;
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: 700;    
 }
 .data_text a:last-child{
     padding-top: 5px;
     color: rgb(17, 24, 32) ;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 500;    
 }
 .icoarrow{
     padding-top: 5px;
     color: rgb(17, 24, 32) ;
-    font-size: 24px;
+    font-size: 1.2vw;
     font-weight: 700;  
 }
 .data_text a:hover{
@@ -266,6 +270,8 @@ a {
 .boxs_container{
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
+    height: auto;
 
 }
 .data_box{
@@ -274,15 +280,16 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
+    
 }
 .data_box img{
-    width: 150px;
-    height: 150px;
+    width: 90%;
+    height: 80%;
     margin-bottom:15px ;
 }
 .data_box a{
     color: rgb(17, 24, 32);
-    font-size: 20px;
+    font-size: 1vw;
     font-weight:  700;
 }
 .data_box:hover{
@@ -293,45 +300,46 @@ a {
     border-radius: 50%;
 }
 
-#data_boxaleft{
-margin-right: 100px;
+#data_boxaleft {
+  
+margin-right: 1in;
 }
 
 
 /* .................footer............. */
 footer {
   width: 100%;
-  height: 300px;
+  height: auto;
   border-top: 1px solid black;
 }
 .footerdiv{
   display: flex;
   flex-direction: row-reverse;
-  padding: 30px 0;
+  padding: 3vw 0;
   justify-content: space-around;
   width: 80%;
-  height: 300px;
+  height: auto;
   margin: 0 auto;
 }
 footer div {
-  width: 25;
+  width: 25%;
   padding: 20px;
 }
 
 footer div h1 {
   color: rgb(56, 55, 55);
   margin-bottom: 10px;
-font-size:15px;
+font-size:1vw;
 }
 
 footer div ul li a,
 pre {
   text-decoration: none;
   color: rgb(162, 162, 162);
-  font-size:10px;
+  font-size:0.7vw;
 }
 .icc{
-  font-size: 13px;
+  font-size: 0.6vw;
   padding-right: 5px;
 }
 
@@ -387,7 +395,60 @@ footer div ul li {
 }
 #badge{
 color: rgb(255, 13, 13);
-font-size: 15px;
+font-size: 0.8vw;
 font-weight: 900;
 
 }
+@media only screen and (max-width: 600px) {
+  footer div ul li a,
+pre {
+  display: none;
+
+}
+
+}
+
+.data_boxx{
+  display: flex;
+  width: 13%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  
+  
+}
+.data_boxx img{
+  width: 90%;
+  height: 80%;
+  margin-bottom:15px ;
+}
+.data_boxx a{
+  color: rgb(17, 24, 32);
+  font-size: 1vw;
+  font-weight:  700;
+  width: 100%;
+  color: #2e2e2b;
+}
+.data_boxx:hover{
+  text-decoration: underline;
+}
+.data_boxx img:hover{
+  border: 0.5px solid rgb(118, 118, 118);
+}
+
+.lodii{
+width: 100%;
+height: 180px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.lodii img{
+  width: 20%;
+}
+.lodii:hover{
+  cursor: wait;
+}
+
+

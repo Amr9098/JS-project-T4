@@ -55,6 +55,8 @@ function show_LimitedDeals(){
                 catbox.appendChild(elem_a);
                 catbox.appendChild(elem_a2);
                 LimitedDeals.appendChild(catbox);
+                this.addEventListener('loadend',aali);
+
             }
         }
     }
@@ -93,6 +95,8 @@ function show_LimitedDeals(){
                     catbox.appendChild(elem_a2);
                     catbox.appendChild(elem_a3);
                     appleProducts.appendChild(catbox);
+                    this.addEventListener('loadend',aaap);
+
                 }
             }
         }
@@ -118,4 +122,8 @@ function show_LimitedDeals(){
          document.getElementById("badge").innerHTML=sessionStorage.getItem("countamr");
 
     // ...........................Iphone11....................
-    
+    function aaap(){
+        document.getElementById("lodiiap").style.display="none";
+      } function aali(){
+        document.getElementById("lodiili").style.display="none";
+      }

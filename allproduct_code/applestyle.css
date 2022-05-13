@@ -233,6 +233,8 @@ margin-top: 10px;
   width: 150px;
   height: 150px;
   margin-bottom:10px ;
+  border-radius: 20px;
+
 
 }
 .show_box a{
@@ -273,6 +275,7 @@ color: rgb(13, 13, 13);}
   width: 220px;
   height: 220px;
   margin-bottom:5px ;
+  border-radius: 20px;
 }  
 
   #siz_box a:last-child{
@@ -292,4 +295,17 @@ color: rgb(13, 13, 13);}
     color: black;
   }
 
-  
+  .lodii{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .lodii img{
+      width: 20%;
+    }
+    .lodii:hover{
+      cursor: wait;
+    }

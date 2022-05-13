@@ -24,13 +24,20 @@ function show(){
             document.getElementById("price_product").innerHTML=dataR.price;
             document.getElementById("condition_product").innerHTML=dataR.condition;
             document.getElementById("shipping-product").innerHTML=dataR.shipping;
+            this.addEventListener('loadend',aaimg);
+
         }
     }
     xhr.send();
     }
     show();
+ function aaimg(){
+    document.getElementById("lodiiimg").style.display="none";
+    document.getElementById("img-product").style.display="block";
+  }
 
-    
+  var sold_product =Math.floor(Math.random() * (150 + 1));
+  document.getElementById("sold_product").innerHTML=sold_product;
 
     // ..................add_cart............add_cart.onclick........
 
@@ -70,7 +77,7 @@ function show(){
            
            
             var cost =Math.floor(Math.random() * (50 + 1));
-
+            document.getElementById("sold_product").innerHTML=cost;
 
 
             i_name.push(localStorage.getItem("producttitle"));
