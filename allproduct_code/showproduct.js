@@ -5,6 +5,7 @@ console.log(items);
 
 
 
+
 function show(){
     var xhr = new XMLHttpRequest();
     var url="https://api.npoint.io/13b45254f8416319501e/"+catygory+"/"+items;
@@ -25,11 +26,12 @@ function show(){
             document.getElementById("condition_product").innerHTML=dataR.condition;
             document.getElementById("shipping-product").innerHTML=dataR.shipping;
             this.addEventListener('loadend',aaimg);
-
+           
         }
     }
     xhr.send();
     }
+
     show();
  function aaimg(){
     document.getElementById("lodiiimg").style.display="none";

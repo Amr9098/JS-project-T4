@@ -1,18 +1,29 @@
+document.getElementById("lodiise").style.display="none"
+
 var butsearch=document.getElementById("butsearch");
-var search_text=document.getElementById("search_text");
 // search_text.value="Apple";
+var textS=document.getElementById("search_text");
 butsearch.onclick=show_search;
     
     var search = document.getElementById("search");
+
     function show_search(){
+        document.getElementById("lodiise").style.display="flex";
+       
+
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://api.npoint.io/13b45254f8416319501e/"+search_text.value, true);
+        xhr.open("GET", "https://api.npoint.io/13b45254f8416319501e/search/", true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 var dataR =JSON.parse( xhr.responseText);
                 // console.log(dataR.length);
+
+                console.log(textS.value) 
                 for (var i=6; i<dataR.length;i++){ 
                     // console.log(dataR[i].money);
+                    if(dataR[i].title.includes(textS.value)){
+                        console.log(i);
+                    
                     var catbox = document.createElement('div');
                     catbox.setAttribute('class','show_box');
                     catbox.setAttribute('id','siz_box');
@@ -31,6 +42,12 @@ butsearch.onclick=show_search;
                     catbox.appendChild(elem_a2);
                     catbox.appendChild(elem_a3);
                     search.appendChild(catbox);
+                    this.addEventListener('loadend',function(){
+                        document.getElementById("lodiise").style.display="none";
+
+                    });
+
+                    }
                 }
             }
         }
@@ -41,6 +58,9 @@ butsearch.onclick=show_search;
             console.log(x.alt);
             sessionStorage.setItem("produtselect", x.alt);
             window.open("/allproduct_code/showproduct.html","_self");
+            sessionStorage.setItem("homepageitemsselect", "search");
+
+            
          
          }
          document.getElementById("badge").innerHTML=sessionStorage.getItem("countamr");

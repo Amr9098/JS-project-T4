@@ -74,8 +74,6 @@ function show_Categories(){
                 catbox.appendChild(elem_a);
                 catplaces.appendChild(catbox);
                 this.addEventListener('loadend',aaca);
-
-
               
             }
         }
